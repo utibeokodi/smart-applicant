@@ -2,6 +2,7 @@
 import { jsx, Box, Button, Heading, Text } from 'theme-ui';
 import { IoMdCheckmarkCircle } from 'react-icons/io';
 import { IoIosCloseCircle } from 'react-icons/io';
+import { Link } from 'components/link';
 
 const PriceTable = ({ price, isMonthly }) => {
   return (
@@ -49,9 +50,9 @@ const PriceTable = ({ price, isMonthly }) => {
         ))}
       </Box>
       <Box sx={{ textAlign: 'center' }} className="priceButton">
-        <Button sx={styles.button} variant="primaryMd">
-          {price.buttonText}
-        </Button>
+      <Link path="/register" sx={{ ...styles.button, variant: 'buttons.primaryMd' }}>
+        {price.buttonText}
+      </Link>
       </Box>
     </Box>
   );
