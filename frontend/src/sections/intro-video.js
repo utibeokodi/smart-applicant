@@ -21,7 +21,7 @@ const IntroVideo = () => {
           description="With Smart Applicant, take control of your job search. Set your preferences for customized applications, and make the right impression with potential employers."
         />
         <Box sx={styles.explore}>
-          <LearnMore path="#!" label="Explore More" />
+          <LearnMore path="/#how-it-works" label="Explore More" />
         </Box>
         <Box sx={styles.videoWrapper}>
           <Modal isOpen={isOpen}>
@@ -31,7 +31,7 @@ const IntroVideo = () => {
               color="#fff"
             />
             <ResponsiveIframe
-              src="https://player.vimeo.com/video/394343710?autoplay=1&color=28DDB2&title=0&byline=0&portrait=0"
+              src="/videos/video.mp4"
               allow="autoplay; fullscreen"
               allowFullScreen
             />

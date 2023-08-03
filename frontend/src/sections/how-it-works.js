@@ -30,7 +30,7 @@ const workflowData = [
 
 const WorkFlow = () => {
   return (
-    <Box as="section" sx={styles.workflow}>
+    <Box as="section" sx={styles.workflow} id="how-it-works">
       <Container>
         <BlockTitle
           sx={styles.workflow.blockTitle}

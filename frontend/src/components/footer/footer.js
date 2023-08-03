@@ -12,7 +12,7 @@ export default function Footer() {
         <Box sx={styles.footerInner}>
           <Box sx={styles.copyright}>
             <Logo />
-            <Text as="span">
+            <Text as="span" ml={6}>
               {new Date().getFullYear()} All rights reserved
             </Text>
           </Box>

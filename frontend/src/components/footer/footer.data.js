@@ -4,19 +4,15 @@ export const footerNav = [
     label: 'Home',
   },
   {
-    path: '#!',
-    label: 'Advertise',
+    path: '/#ultimate-feature',
+    label: 'Features',
   },
   {
-    path: '#!',
-    label: 'Supports',
+    path: '/#pricing',
+    label: 'Pricing',
   },
   {
-    path: '#!',
-    label: 'Marketing',
-  },
-  {
-    path: '#!',
+    path: '/#faq',
     label: 'FAQ',
   },
 ];

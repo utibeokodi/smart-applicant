@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { GrClose } from 'react-icons/gr';
 import Sticky from 'react-stickynode';
 import Logo from 'components/logo';
-import { NavLink } from 'components/link';
+import { NavLink, Link } from 'components/link';
 import menuItems from './header.data';
 
 export default function Header() {
@@ -28,8 +28,8 @@ export default function Header() {
         >
           <Container>
             <Box sx={styles.headerInner}>
-              <Logo isWhite={mobileMenu} />
 
+              <Logo/>
               <Flex
                 as="nav"
                 sx={styles.navbar}
@@ -49,12 +49,20 @@ export default function Header() {
                       />
                     </li>
                   ))}
+                <li>
+                <Link
+                  path="/login"
+                  label="Log In"
+                  ml={4}
+                  sx ={{ cursor: 'pointer' }}
+                />
+                </li>
                 </Box>
-                <Button variant="primaryMd" sx={styles.explore}>
+
+                <Button variant="primaryMd" sx={styles.register}>
                   Register Now
                 </Button>
               </Flex>
-
               {mobileMenu ? (
                 <Button variant="text" sx={styles.closeButton}>
                   <GrClose
@@ -143,8 +151,8 @@ const styles = {
       color: 'primary',
     },
   },
-  explore: {
-    display: ['block', 'block', 'block', 'block', 'none'],
+  register: {
+    display: ['block', 'block', 'block', 'none', 'none'],
     position: 'absolute',
     bottom: 40,
     left: '50%',

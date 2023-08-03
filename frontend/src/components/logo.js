@@ -1,8 +1,6 @@
 /** @jsx jsx */
-import { jsx, Image } from 'theme-ui';
+import { jsx, Box } from 'theme-ui';
 import { Link } from 'components/link';
-import logo from 'assets/images/logo.png';
-import logoWhite from 'assets/images/logo-white.png';
 
 export default function Logo({ isWhite }) {
   return (
@@ -10,9 +8,21 @@ export default function Logo({ isWhite }) {
       path="/"
       sx={{
         variant: 'links.logo',
+        fontFamily: "'Great Vibes', cursive",
+        fontWeight: 'bold',
+        fontSize: [5, 6],
+        letterSpacing: 'tighter',
+        color: isWhite ? 'white' : 'primary',
+        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        display: 'inline-block',
+        padding: '5px',
+        cursor: 'pointer'
+        
       }}
     >
-      <Image src={isWhite ? logoWhite : logo} alt="startup landing logo" />
+      Smart Applicant
     </Link>
   );
 }

@@ -31,7 +31,6 @@ const PriceTable = ({ price, isMonthly }) => {
 
             <Text as="p" sx={styles.priceAmount}>
               {price?.amount?.toFixed(0)}
-              {console.log(`isMonthly:${isMonthly}`)}
               {isMonthly ? '/mo' : '/yr'}
             </Text>
           </Box>

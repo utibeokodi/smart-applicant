@@ -14,5 +14,5 @@ export default [
   {
     path: 'faq',
     label: 'Faq',
-  },
+  }
 ];
