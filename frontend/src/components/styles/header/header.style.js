@@ -1,4 +1,10 @@
 export const styles = {
+  link: {
+    mr:[4, 4, 4, 4, 5],
+    ml: [4, 4, 4, 4, 5],
+    cursor: 'pointer'
+  },
+
   headerWrapper: {
     backgroundColor: 'transparent',
     transition: '0.3s ease-in-out 0s',

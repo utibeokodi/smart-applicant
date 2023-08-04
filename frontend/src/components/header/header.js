@@ -7,9 +7,13 @@ import Logo from 'components/logo';
 import { NavLink, Link } from 'components/link';
 import menuItems from './header.data';
 import { styles } from '../styles/header/header.style';
+import { useRouter } from 'next/router';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
+
+  const router = useRouter();
+  const isHomePage = router.pathname === '/';  
 
   const openMobileMenu = () => {
     setMobileMenu(true);
@@ -42,12 +46,23 @@ export default function Header() {
                   className={mobileMenu ? 'active' : ''}
                 >
                   {menuItems.map(({ path, label }, i) => (
+                    isHomePage ? 
                     <li key={i}>
                       <NavLink
                         path={path}
                         label={label}
                         onClick={closeMobileMenu}
+                        sx={styles.link}
                       />
+                    </li>
+                    :
+                    <li>
+                    <Link
+                      path={`/#${path}`} 
+                      label={label}
+                      key={i}
+                      sx={ styles.link }
+                    />
                     </li>
                   ))}
                 <li>
