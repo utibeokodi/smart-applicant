@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box } from 'theme-ui';
+import { styles } from './styles/responsive-iframe.style';
 
 const ResponsiveIframe = ({ src, children, ...props }) => {
   return (
@@ -10,19 +11,3 @@ const ResponsiveIframe = ({ src, children, ...props }) => {
 };
 
 export default ResponsiveIframe;
-
-const styles = {
-  videoContainer: {
-    overflow: 'hidden',
-    paddingTop: '56.25%',
-    position: 'relative',
-    iframe: {
-      border: 0,
-      height: '100%',
-      left: 0,
-      position: 'absolute',
-      top: 0,
-      width: '100%',
-    },
-  },
-};

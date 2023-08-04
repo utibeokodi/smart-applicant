@@ -3,6 +3,7 @@ import { jsx, Link as A } from 'theme-ui';
 import { Link as MenuLink } from 'react-scroll';
 import NextLink from 'next/link';
 import { HiOutlineChevronRight } from 'react-icons/hi';
+import { styles } from './styles/link.style'; 
 
 export function NavLink({ path, label, children, ...rest }) {
   return (
@@ -37,22 +38,3 @@ export function LearnMore({ path, label, children, ...rest }) {
     </NextLink>
   );
 }
-
-const styles = {
-  learnMore: {
-    color: 'link',
-    cursor: 'pointer',
-    fontWeight: 500,
-    display: 'inline-flex',
-    alignItems: 'center',
-    svg: {
-      transition: 'margin-left 0.3s ease-in-out 0s',
-      ml: '3px',
-    },
-    ':hover': {
-      svg: {
-        ml: '8px',
-      },
-    },
-  },
-};

@@ -4,9 +4,9 @@ import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
-import UltimateFeatures from 'sections/ultimate-features';
+import Features from 'sections/features';
 import IntroVideo from 'sections/intro-video';
-import UsefulFeatures from 'sections/additional-features';
+import AdditionalFeatures from 'sections/additional-features';
 import Pricing from 'sections/pricing';
 import Faq from 'sections/faq';
 import WorkFlow from 'sections/how-it-works';
@@ -17,10 +17,10 @@ export default function IndexPage() {
       <Layout>
         <SEO title="Smart Applicant" />
         <Banner />
-        <UltimateFeatures />
+        <Features />
         <IntroVideo />
         <WorkFlow/>
-        <UsefulFeatures />
+        <AdditionalFeatures />
         <Pricing />
         <Faq />
       </Layout>

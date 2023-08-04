@@ -23,10 +23,12 @@ app.prepare()
     // This is the catch-all route for Next.js pages
     server.all('*', (req, res) => handle(req, res));
 
-    server.listen(3000, (err) => {
+    const port = process.env.PORT || 3000; // Fallback to 3000 if PORT is not set
+    server.listen(port, (err) => {
       if (err) throw err;
-      console.log('Ready on http://localhost:3000');
+      console.log(`Server running on http://localhost:${port}`);
     });
+
   })
   .catch((error) => {
     console.error(error.stack);

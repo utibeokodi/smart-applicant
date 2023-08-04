@@ -7,6 +7,7 @@ import bulb from 'assets/images/icons/bulb-2.png';
 import diamond from 'assets/images/icons/diamond.png';
 import help from 'assets/images/icons/help.png';
 import award from 'assets/images/icons/award.png';
+import { styles } from './styles/additional-features.style';
 
 const data = [
   {
@@ -35,7 +36,7 @@ const data = [
   },
 ];
 
-const UsefulFeatures = () => {
+const AdditionalFeatures = () => {
   return (
     <Box as="section" id="useful-features" variant="section.usefulFeatures">
       <Container>
@@ -58,30 +59,4 @@ const UsefulFeatures = () => {
   );
 };
 
-export default UsefulFeatures;
-
-const styles = {
-  heading: {
-    marginBottom: 80,
-  },
-  features: {
-    gap: 60,
-    display: ['grid'],
-    gridTemplateColumns: ['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(2, 1fr)'],
-    '.feature-item': {
-      display: ['block', 'block', 'block', 'block', 'flex'],
-      px: ['15px', 0],
-      maxWidth: ['none'],
-      figure: {
-        minWidth: '90px',
-        m: [
-          '0 auto 30px',
-          '0 auto 30px',
-          '0 auto 30px',
-          '0 auto 30px',
-          '0 26px 0 0',
-        ],
-      },
-    },
-  },
-};
+export default AdditionalFeatures;
