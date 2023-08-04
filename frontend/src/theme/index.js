@@ -214,7 +214,7 @@ export default {
       minHeight: ['50px', '50px', '50px', '50px', '50px'],
       padding: ['0 25px', '0 25px', '0 25px', '0 30px'],
       '&:hover': {
-        bg: 'dark',
+        bg: 'secondary',
       },
     },
     primaryMd: {
