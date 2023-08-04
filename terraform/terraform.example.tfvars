@@ -1,0 +1,5 @@
+aws_region = "<AWS REGION>"
+app_name = "<app name eg. interview-prep>"
+stage = "<stage of project e.g dev, prod>"
+aws_access_key = "<AWS ACCESS KEY>"
+aws_secret_access_key = "<AWS SECRET KEY>"
