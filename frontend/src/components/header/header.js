@@ -56,11 +56,10 @@ export default function Header() {
                       />
                     </li>
                     :
-                    <li>
+                    <li key={i}>
                     <Link
                       path={`/#${path}`} 
                       label={label}
-                      key={i}
                       sx={ styles.link }
                     />
                     </li>
