@@ -51,7 +51,7 @@ describe('sendVerificationMail', () => {
     expect(Mailer).toHaveBeenCalledWith(
       mockUser.email,
       process.env.INTVW_PREP_FROM_EMAIL,
-      'InterviewPrep Account Activation',
+      'Smart Applicant Account Activation',
       expect.any(String),
       expect.any(String),
     );
@@ -87,7 +87,7 @@ describe('sendVerificationMail', () => {
     expect(Mailer).toHaveBeenCalledWith(
       mockUser.email,
       process.env.INTVW_PREP_FROM_EMAIL,
-      'InterviewPrep Account Activation',
+      'Smart Applicant Account Activation',
       expect.any(String),
       expect.any(String),
     );

@@ -61,7 +61,7 @@ describe('sanitizeFormInput', () => {
     sanitizeFormInput(['firstName', 'lastName', 'email', 'password1', 'password2'])(req, res, next);
 
     expect(res.status).toHaveBeenCalledWith(400);
-    expect(res.json).toHaveBeenCalledWith({ error: 'Invalid email format.' });
+    expect(res.json).toHaveBeenCalledWith({ message: 'Invalid email format.' });
   });
 
   test('successful sanitization and validation', () => {

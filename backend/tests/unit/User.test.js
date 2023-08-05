@@ -219,7 +219,7 @@ describe('User', () => {
 
       expect(docClient.update).toHaveBeenCalled();
       const updateParams = docClient.update.mock.calls[0][0];
-      expect(updateParams.TableName).toEqual(process.env.INTERVIEW_PREP_USER_TABLE);
+      expect(updateParams.TableName).toEqual(process.env.SMART_APPLICANT_USER_TABLE);
       expect(updateParams.Key.user_id).toEqual(user.userId);
       expect(updateParams.UpdateExpression).toEqual('set firstName = :firstName, lastName = :lastName, email = :email, password = :password, isVerified = :isVerified');
       expect(updateParams.ExpressionAttributeValues).toEqual({
