@@ -18,7 +18,7 @@ async function sendPasswordResetMail(user, req) {
     ${req.protocol}://${host}/reset-password?token=${resetToken}\n
     If your didn't forget your password, please ignore this email.\n
     Regards,\n
-    InterviewPrep Team`;
+    Smart Applicant Team`;
 
   const html = `
     <p>Hello ${firstName},</p>
@@ -26,11 +26,11 @@ async function sendPasswordResetMail(user, req) {
     <a href=" ${req.protocol}://${host}/reset-password?token=${resetToken}">Reset Password</a>
     <p>If your didn't forget your password, please ignore this email.</p>
     <p>Regards,</p>
-    <p>InterviewPrep Team.</p>`;
+    <p>Smart Applicant Team.</p>`;
 
-  const subject = 'InterviewPrep Password Reset Request';
+  const subject = 'Smart Applicant Password Reset Request';
 
-  const mailer = new Mailer(email, process.env.INTVW_PREP_FROM_EMAIL, subject, text, html);
+  const mailer = new Mailer(email, process.env.SMART_APPLICANT_FROM_EMAIL, subject, text, html);
   await mailer.sendMail();
 }
 
