@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Container, Label, Button, Input, Heading, Grid, Text, Spinner } from 'theme-ui';
-import { styles } from './styles/registration-form.style.js';
+import { styles } from './styles/base-form.style.js';
 import { Link } from 'components/link';
 import { useRouter } from 'next/router';
 
