@@ -4,6 +4,10 @@ import { initGA, logPageView } from 'analytics';
 import 'components/modal/modal.css';
 import 'typeface-dm-sans';
 import Head from 'next/head';
+import 'swiper/swiper-bundle.min.css';
+import 'rc-drawer/assets/index.css';
+import 'react-modal-video/css/modal-video.min.css';
+import 'react-credit-cards/es/styles-compiled.css';
 
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {

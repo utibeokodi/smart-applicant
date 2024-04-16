@@ -10,7 +10,7 @@ export default function Logo({ isWhite }) {
         variant: 'links.logo',
         fontFamily: "'Great Vibes', cursive",
         fontWeight: 'bold',
-        fontSize: [4, 5, 6],
+        fontSize: [4, 5, 5],
         letterSpacing: 'tighter',
         color: isWhite ? 'white' : 'primary',
         background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
